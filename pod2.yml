@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-sun
+spec:
+  containers:
+  - name: webserver-sun
+    image: nginx
+    ports:
+    - containerPort: 80
+  - name: webwatcher-sun
+    image: afakharany/watcher
