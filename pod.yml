@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sunilpod
+spec:
+  containers:
+  - name: container-sun
+    image: nginx
+    ports:
+    - containerPort: 8080
+    
